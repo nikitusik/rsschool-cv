@@ -24,8 +24,9 @@ necessary knowledge that I can apply in my future work.
 
 ## Code Examples
 
-This is exampe of string validator on Java:
-'''java
+This is example of string validator on Java:
+
+```java
 package com.laboratory.validators;
 
 import javax.faces.component.UIComponent;
@@ -52,4 +53,4 @@ public class StrValidator extends ValidatorBaseFuncs implements Validator<String
         setSuccess(uiComponent);
     }
 }
-'''
+```
