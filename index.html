@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume RSchool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nikita Yarychenko</h1>
+    </header>
+    <main>
+        <div class="info">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>Telephone: +79272066836</li>
+                <li>Email: nikitacpmi@gmail.com</li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Basic of HTML5, CSS3</li>
+                <li>Basic of Git</li>
+                <li>Programming language: Java, C++, Python, C#</li>
+                <li>Frameworks: Google Web Toolkit</li>
+            </ul>
+        </div>
+        <div class="code">
+            <h2>Code Example</h2>
+            <p>This is example of string validator on Java:</p>
+            <pre>
+                <code class="java">
+                        package com.laboratory.validators;
+
+                        import javax.faces.component.UIComponent;
+                        import javax.faces.context.FacesContext;
+                        import javax.faces.validator.FacesValidator;
+                        import javax.faces.validator.Validator;
+                        import javax.faces.validator.ValidatorException;
+                        
+                        @FacesValidator(value = "validators.StrValidator")
+                        public class StrValidator extends ValidatorBaseFuncs implements Validator<String> {
+                        
+                            @Override
+                            public void validate(FacesContext facesContext, UIComponent uiComponent, String s) throws ValidatorException {
+                                if (s == null) {
+                                    throwError(uiComponent, "Отсутствует строка!");
+                                    return;
+                                }
+                        
+                                if (s.isEmpty()) {
+                                    throwError(uiComponent, "Строка пустая!");
+                                    return;
+                                }
+                        
+                                setSuccess(uiComponent);
+                            }
+                        }
+                </code>
+            </pre>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <p>At the moment I am a 4th year student of Samara State University in the direction of "Applied <br> Mathematics and Informatics".
+               Purposefully I did not pass any courses, and studied interesting <br> information on programming independently on the Internet.
+            </p>
+        </div>
+        <div class="english">
+            <h2>English</h2>
+            <p>I began to study English in depth in the 3rd year of study at the Institute, up to this point my <br>
+                 English was bad. According to the results of determining the level of English I have the result <br>
+                  A2. To improve my English I look for interesting information in English, try to watch movies <br> 
+                  without translation and constantly read in this language.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

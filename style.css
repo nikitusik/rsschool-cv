@@ -1,0 +1,26 @@
+body{
+    width: 1024px;
+    align-items: center;
+    margin: auto;
+    background-color: gainsboro;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info,
+.skills,
+.code,
+.education,
+.english{
+    border: 3px solid red;
+}
+
+
