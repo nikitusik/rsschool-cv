@@ -3,6 +3,7 @@ body{
     align-items: center;
     margin: auto;
     background-color: gainsboro;
+    font-size: 20px;
 }
 
 h1{
@@ -15,12 +16,14 @@ h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.info,
-.skills,
-.code,
-.education,
-.english{
-    border: 3px solid red;
+hr{
+    border: 2px solid blue;
+}
+.java{
+    font-size: 12px;
+}
+.photo{
+    margin-left: 360px;
 }
 
 
